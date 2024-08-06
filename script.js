@@ -5,4 +5,10 @@ function getComputerChoice(choices) {
   return choices[randomNumber];
 }
 
-console.log(getComputerChoice(choicesArray));
+function getHumanChoice(choices) {
+  let userInput = Number(prompt("for rock - enter 0; for paper - enter 1; for scissors - enter 2", 0));
+  return choices[userInput];
+}
+
+console.log("Computer: " + getComputerChoice(choicesArray));
+console.log("User: " + getHumanChoice(choicesArray));
